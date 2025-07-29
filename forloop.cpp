@@ -6,7 +6,7 @@ int main() {
     int direction = 12;
     int i;
 
-    for ( i = start; i >= 0 AND i < text_len; i += direction ) {
+    for ( i = start; i >= 0 && i < text_len; i += direction ) {
         // placeholder body
         std::cout << "i = " << i << std::endl;
     }
