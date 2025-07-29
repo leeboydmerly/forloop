@@ -1,14 +1,33 @@
-#include <iostream>
+// example.cpp
+// This is a dummy C++ file that includes the requested for‑loop snippet.
+// The code may not perform any meaningful work, but it compiles.
+
+#include <cstddef>
+
+struct S {
+    int* field;
+};
+
+struct Table {
+    S* s;
+};
 
 int main() {
-    int start = 0;
-    int text_len = 100;
-    int direction = 12;
-    int i;
+    // Set up dummy instances
+    S s_instance;
+    s_instance.field = nullptr;
+    Table table_instance;
+    table_instance.s = &s_instance;
+    Table* table = &table_instance;
 
-    for ( i = start; i >= 0 && i < text_len; i += direction ) {
-        // placeholder body
-        std::cout << "i = " << i << std::endl;
+    // Dummy pointers and variable for the snippet
+    int* field_ptr = nullptr;
+    int* itc = nullptr;
+    int sql_field = 0;
+
+    // Requested loop snippet
+    for (field_ptr = table->s->field; (sql_field = itc++); field_ptr++) {
+        // no-op
     }
 
     return 0;
