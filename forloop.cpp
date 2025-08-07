@@ -33,10 +33,7 @@ int main() {
         // no-op
     }
 
-    if ((sql_field = itc++)) {
-        // no-op
-    }
-    if (sql_field = itc++) {
+    if ((sql_field = itc++) != nullptr) {
         // no-op
     }
 
