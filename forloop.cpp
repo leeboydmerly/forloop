@@ -29,6 +29,8 @@ int main() {
     for (field_ptr = table->s->field; (sql_field = itc++); field_ptr++) {
         // no-op
     }
-
+    if ((sql_field = itc++)){
+        // no-op
+    }
     return 0;
 }
