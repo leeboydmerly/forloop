@@ -36,6 +36,9 @@ int main() {
     if ((sql_field = itc++)) {
         // no-op
     }
+    if (sql_field = itc++) {
+        // no-op
+    }
 
     return 0;
 }
